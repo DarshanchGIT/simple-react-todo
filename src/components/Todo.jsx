@@ -58,7 +58,7 @@ export default function Todo() {
         <div className="todo-display-div">
           <ul>
             {todos.map((todo, index) => (
-              <li key={index}>
+              <li className="li-tab" key={index}>
                 {editIndex === index ? (
                   <form onSubmit={saveTodo}>
                     <input
